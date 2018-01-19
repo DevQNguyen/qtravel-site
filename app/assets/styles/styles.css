@@ -1,6 +1,24 @@
+$mainBlue: #2f5572;
+
 body {
-  margin: 0;
+  color: $mainBlue;
+  margin: 14px;
   padding: 25px;
+  columns: 300px 2;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.box {
+  a {
+    display: block;
+    padding: 10px;
+  }
+
+  p {
+    color: darkblue;
+    margin: 15px; 
+  }
 }
 
 

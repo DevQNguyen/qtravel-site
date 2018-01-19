@@ -1,6 +1,21 @@
 body {
-  margin: 0;
+  color: #2f5572;
+  margin: 14px;
   padding: 25px;
+  -webkit-columns: 300px 2;
+          columns: 300px 2;
+  border-radius: 50%;
+  background-color: yellow;
 }
+
+.box a {
+    display: block;
+    padding: 10px;
+  }
+
+.box p {
+    color: darkblue;
+    margin: 15px; 
+  }
 
 
