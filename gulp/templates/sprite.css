@@ -1,8 +1,18 @@
+/* Do not edit modules/_sprite directly as it's generated automatically by Gulp.
+   Instead edit gulp/templates/sprite */
+
 {{#shapes}}
+
+  {{#first}}
+    /* code between 'first' will only run once */
+    .icon {
+      background-image: url('/assets/images/sprites/{{{sprite}}}');  /* 3 brackets to for forward slash */
+    }
+  {{/first}}
+
   .icon--{{base}} {
     width: {{width.outer}}px;
     height: {{height.outer}}px;
-    background-image: url('/temp/sprite/css/{{{sprite}}}');  /* 3 brackets to for forward slash */
     background-position: {{position.relative.xy}};
   }
 {{/shapes}}
