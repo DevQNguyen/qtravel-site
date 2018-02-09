@@ -13,10 +13,12 @@ class StickyHeader {
     this.addSmoothScrolling();
   }
 
+  // Use 'smoothScroll' method to scroll to headerlinks
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
   }
 
+  // Make header navbar light or dark on scroll
   createHeaderWaypoint() {
     var that = this;
     new Waypoint({
@@ -32,6 +34,7 @@ class StickyHeader {
     });
   }
 
+  // Change color of nav links based on page section
   createPageSectionWaypoints() {
     var that = this;
     this.pageSections.each(function () {
