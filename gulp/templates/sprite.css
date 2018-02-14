@@ -6,11 +6,11 @@
   {{#first}}
     /* code between 'first' will only run once */
     .icon {
-      background-image: url('/assets/images/sprites/{{{sprite}}}');  /* 3 brackets to for forward slash */
+      background-image: url('../../assets/images/sprites/{{{sprite}}}');  /* 3 brackets to for forward slash */
     }
 
     .no-svg .icon {
-      background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+      background-image: url('../../assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
     }
 
   {{/first}}
